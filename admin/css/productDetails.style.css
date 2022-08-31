@@ -1,0 +1,351 @@
+.fa-solid.fa-backward {
+    font-size: 2rem;
+    position: absolute;
+    left: 9rem;
+    top: 1.5rem;
+    color: white;
+}
+
+
+.admin-product-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* display: grid;
+    grid-template-areas: "I D"
+                          "DL E"; */
+}
+
+.row {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.square:nth-child(1) {
+    width: 50%;
+    background-color: rgb(76, 72, 90);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.square:nth-child(2) {
+    /* grid-area: I; */
+    
+    /* width: 50%; */
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(129, 122, 160);
+}
+
+.product-form-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.product-input-1 {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+
+.product-input-1.description {
+    max-width: 300px;
+    height: 220px;
+    text-align: center;
+    outline: none;
+}
+
+.product-button-1 {
+
+    margin-top: 1rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(60, 79, 205);
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-1-label {
+        width: 300px;
+        margin-top: 1rem;
+        margin-bottom: 5px;
+        color: black;
+        cursor: pointer;
+}
+
+.square-3 {
+    /* grid-area: DL; */
+    width: 100%;
+    height: 50%;
+    background-color: rgb(104, 98, 125);
+    display: flex;
+    justify-content: center;
+}
+
+.product-form-3 {
+    margin-top: 1rem;
+}
+
+.product-button-3 {
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(199, 42, 42);
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-button-3:hover {
+    transition: 0.3s;
+    background-color: rgb(151, 42, 42);
+}
+
+.product-button-2 {
+
+    height: 80%;
+    width: 70%;
+    border-radius: 3px;
+    background-color: rgb(60, 79, 205);
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-button-2:hover {
+    transition: 0.3s;
+    background-color: rgb(59, 74, 170);
+}
+
+.product-button-new {
+    height: 50%;
+    width: 70%;
+    border-radius: 3px;
+    background-color: rgb(159 100 253);
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-form-new {
+    width: 150px;
+    height: 60px;
+    margin: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 61, 74);
+
+}
+
+.product-form-one {
+    width: 150px;
+    height: 200px;
+    margin: 13px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(64, 61, 74);
+
+}
+
+.row-one {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid.fa-camera {
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.fa-solid.fa-camera:hover {
+    transition: 0.2s;
+    color: white;
+}
+
+.fa-solid.fa-camera.new:hover {
+    transition: 0.2s;
+    color: rgb(159 100 253);
+}
+
+.product-button-new:hover {
+    transition: 0.2s;
+    background-color: rgb(104 71 157);
+    color: gray;
+}
+
+.product-input-2 {
+    display: none;
+}
+.product-input-new {
+    display: none;
+}
+
+
+.row-first {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+}
+
+.fa-solid.fa-trash-can {
+    opacity: 0;
+    cursor: pointer;
+    color: rgb(183, 26, 26);
+    position: absolute;
+    right : 0.6rem;
+    top : 0.5rem;
+}
+
+.fa-solid.fa-trash-can:hover {
+    color: rgb(239, 124, 124);
+}
+
+
+@media only screen and (max-width: 900px) {
+
+
+
+    .fa-solid.fa-backward {
+        font-size: 2rem;
+        position: absolute;
+        left: 9rem;
+        top: 1.5rem;
+        color: white;
+    }
+
+    .row {
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .square:nth-child(1) {
+        width: 70%;
+        height: 50vh;
+    }
+    
+    .square:nth-child(2) {
+        width: 70%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(129, 122, 160);
+    }
+
+    .product-button-1,
+    .product-button-3 {
+        margin-bottom: 1rem;
+    }
+  
+
+}
+
+@media only screen and (max-width: 700px) {
+
+
+
+    .fa-solid.fa-backward {
+        font-size: 2rem;
+        position: absolute;
+        left: 4rem;
+        top: 1.3rem;
+        color: white;
+    }
+
+    .square:nth-child(1),
+    .square:nth-child(2) {
+        width: 100%;
+    }
+    
+
+  
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .fa-solid.fa-backward {
+        font-size: 2rem;
+        position: absolute;
+        left: 3rem;
+        top: 0.8rem;
+        color: white;
+    }
+
+
+}
+
+@media only screen and (max-width: 390px) {
+    .fa-solid.fa-backward {
+        font-size: 2rem;
+        position: absolute;
+        left: 3rem;
+        top: 0.9rem;
+        color: white;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 375px) {
+    .fa-solid.fa-backward {
+        font-size: 2rem;
+        position: absolute;
+        left: 3rem;
+        top: 0.5rem;
+        color: white;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .fa-solid.fa-backward {
+        font-size: 2rem;
+        position: absolute;
+        left: 3rem;
+        top: 0.2rem;
+        color: white;
+    }
+
+}

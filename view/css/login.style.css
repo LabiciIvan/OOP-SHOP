@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(111 101 135);
+    /* background-color: rgb(179 179 196); */
+}
+
+.login-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(64, 61, 74);
+    align-items: center;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.login-input {
+    width: 90%;
+    max-height: 40px;
+    min-height: 35px;
+    margin: 1rem 0 1rem 0;
+    outline: none;  
+    border: none;
+    border-radius: 3px; 
+    text-align: center;
+}
+
+.login-button {
+    width: 90%;
+    background-color:  rgb(91, 81, 131);
+    max-height: 40px;
+    min-height: 35px;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    border-radius: 3px;
+    color: white;
+
+}
+.login-button:hover {
+    cursor: pointer;
+    background-color:  rgb(110, 97, 162);
+}
+
+.login-error {
+    color: #ff0033;
+    font-size: 0.8rem;
+}
+
+.form-subheader {
+    width: 50%;
+    /* height: 30px; */
+    background-color:rgb(91, 81, 131);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-subheader:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    background-color:  rgb(110, 97, 162);
+}
+
+.subheader-item {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(208, 199, 199);
+}
+
+.subheader-item:hover {
+    color: white;
+}
+
+@media only screen and (min-width: 1500px) {
+
+    .login-button ,
+    .login-input {
+        width: 50%;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+
+}
+
+@media only screen and (max-width: 414px) {
+    .form-subheader,
+    .login-form {
+        width: 100%;
+    }
+
+
+    .login-wrapper {
+        justify-content: unset;
+        border-top: 1px solid white;
+    }
+
+    .login-form {
+        height: 60%;
+    }
+
+
+}
+
+@media only screen and (max-width: 390px) {
+    .form-subheader,
+    .login-form {
+        width: 100%;
+    }
+
+
+    .login-wrapper {
+        justify-content: unset;
+        border-top: 1px solid white;
+    }
+
+    .login-form {
+        height: 80%;
+    }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .form-subheader,
+    .login-form {
+        width: 100%;
+    }
+
+
+    .login-wrapper {
+        justify-content: unset;
+        border-top: 1px solid white;
+    }
+
+    .login-form {
+        height: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .form-subheader,
+    .login-form {
+        width: 100%;
+    }
+
+
+    .login-wrapper {
+        justify-content: unset;
+        border-top: 1px solid white;
+    }
+
+    .login-form {
+        height: 80%;
+    }
+
+}

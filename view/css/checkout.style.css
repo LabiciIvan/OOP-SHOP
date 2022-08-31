@@ -1,0 +1,157 @@
+.checkout-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-form {
+    width: 50%;
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 2rem;
+}
+
+.checkout-input {
+    text-align: center;
+    outline: none;
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black
+}
+
+
+.checkout_button {
+    width: 30%;
+    height: 50px;
+    background-color: rgb(85, 80, 99);
+    border-radius: 5px;
+    border: 1px solid rgb(85, 80, 99);
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkout-error {
+    font-size: 0.9rem;
+    color: #ff0033;
+}
+
+
+.checkout_button:hover {
+    background-color: rgb(150, 124, 255);
+    cursor: pointer;
+}
+
+
+.checkout-form-card {
+
+    width: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.checkout-form-card 
+
+.card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-wrapper-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-input {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #d6c1ef;
+    background-color: #d6c1ef;
+}
+
+
+
+.checkout-form-card > .card-wrapper >.card-input:nth-child(2) {
+    width: 30%;
+    margin-left: 5%;
+}
+.checkout-form-card > .card-wrapper >.card-input:nth-child(1) {
+    cursor: pointer;
+    color: gray;
+    width: 60%;
+    margin-right: 5%;
+    padding-right: 5px;
+}
+
+
+@media only screen and (min-width: 1600px) {
+
+
+    .checkout-wrapper {
+        height: 100vh;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    .checkout-form {
+        width: 100%;
+        /* height: 50%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: unset;
+        margin-top: 0;
+    }
+
+    .checkout_button,
+    .checkout-input {
+  
+        width: 80%;
+
+    }
+
+}
+@media only screen and (max-width: 414px) {
+ 
+
+}
+
+@media only screen and (max-width: 390px) {
+
+
+
+}
+
+@media only screen and (max-width: 375px) {
+
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+
+}

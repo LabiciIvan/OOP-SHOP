@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 7vh;
+}
+
+
+.navbar-desktop {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 61, 74);
+}
+
+.navbar-items-desktop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-links-desktop {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+.navbar-links-desktop:hover {
+    background-color: rgb(92, 89, 103);
+}
+
+.navbar-links-desktop.out:hover {
+    background-color: unset;
+}
+
+.navbar-links-desktop.profile:hover {
+    background-color: rgb(80, 80, 219);
+}
+
+.navbar-links-desktop.login:hover,
+.navbar-links-desktop.signup:hover {
+    background-image: linear-gradient(to right, #4e4d90, #db2de4);
+}
+
+
+.navbar-link-desktop {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar-links-desktop:nth-child(1) {
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+.navbar-links-desktop.out:hover > .navbar-link-desktop.logout {
+    /* background-color: red; */
+    color: rgb(232, 64, 64);
+}
+
+
+/* STYLES FOR NAVBAR MOBILE */
+
+.navbar-mobile {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 61, 74);
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-solid.fa-bars {
+    color: white;
+    left: 1rem;
+    position: absolute;
+    font-size: 1.3rem;
+}
+
+.navbar-link-mobile {
+    text-decoration: none;
+    color: white;
+  
+}
+
+.navbar-items-mobile {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.fa-solid.fa-xmark {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar-links-mobile {
+    padding: 5px;
+}
+
+.fa-solid.fa-cart-shopping:hover {
+    color: rgb(214, 140, 254);
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    
+
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .navbar-links-mobile {
+        padding: 2px;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    .navbar-links-mobile {
+        padding: 1px;
+        font-size: 0.8rem;
+        height: 14%;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .navbar-link-mobile {
+        text-decoration: none;
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-links-mobile {
+        padding: 3px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .navbar-links-mobile {
+        padding: 1px;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+
+}

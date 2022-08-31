@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profile-page {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-commands {
+    width: 100%;
+    height: 30%;
+    background-color: rgb(104, 98, 125);
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-orders,
+.profile-details {
+    height: 100px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-orders {
+
+    background-color: rgb(129, 122, 160);
+}
+
+.profile-details {
+    background-color: rgb(129, 122, 160);
+}
+
+.fa-solid.fa-boxes-packing,
+.fa-solid.fa-address-card {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.fa-solid.fa-boxes-packing:hover,
+.fa-solid.fa-address-card:hover {
+    /* color:  rgb(80, 80, 219); */
+    transition: 0.2s;
+    color:  rgb(189, 189, 251);
+}
+
+.profile-wrapper {
+    width: 100%;
+    height: 70vh;
+    background-color:rgb(129, 122, 160);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-div {
+    width: 50%;
+    max-width: 800px;
+    height: 150px;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "C R S"
+                         "H P B";
+                         /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); */
+
+}
+
+.profile-input-country {
+    grid-area: C;
+}
+
+.profile-input-region {
+    grid-area: R;
+}
+
+.profile-input-street {
+    grid-area: S;
+}
+
+.profile-input-houseNumber {
+    grid-area: H;
+}
+.profile-input-phoneNumber {
+    grid-area: P;
+}
+
+.profile-submit {
+    grid-area: B;
+    background-color: rgb(85, 85, 243);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile-submit:hover {
+    background-color: rgb(54, 54, 147);
+    color: gainsboro;
+}
+
+.profile-input-country,
+.profile-input-region,
+.profile-input-street,
+.profile-input-houseNumber,
+.profile-input-phoneNumber {
+    outline: none;
+    text-align: center; 
+    background-color: rgb(164, 155, 205);
+    /* background-color: inherit; */
+    color: white;
+    border: none;
+    border-bottom: 2px solid rgb(84, 77, 114);
+    font-size: 1.2rem;
+}
+
+
+.orders-wrapper {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(129, 122, 160);
+    display: none;
+    justify-content: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.orders-table-history {
+    width: 50%;
+    height: 100%;
+    background-color: #cbbaedc9;
+    position: relative;
+
+}
+
+
+
+.orders-row-header > th,
+.orders-row-data > td {
+    /* box-sizing: border-box; */
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 80px;
+}
+
+.fa-solid.fa-box-open {
+    color: rgb(101, 61, 138);
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+
+.fa-solid.fa-box-open:hover {
+    color: rgb(176, 113, 235);
+}
+
+.products_ordered {
+    display: none;
+    position: fixed;
+    width: 20%;
+    min-height: 10%;
+    background-color: #cbbaedc9;
+ 
+    /* right: -13rem;
+    top: 2rem; */
+    right: 5rem;
+    top: 30rem;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .profile-wrapper {
+        align-items: unset;
+    }
+
+    .profile-div {
+        margin-top: 3rem;
+    }
+    
+    .products_ordered {
+        
+        right: 12rem;
+        top: 17rem;
+    }
+
+    .products_ordered {
+
+        width: 100%;
+        height: 26%;
+        right: 0rem;
+        top: 2.9rem;
+      
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .orders-table-history {
+        width: 100%;
+ 
+    }
+    .products_ordered {
+
+        width: 100%;
+        height: 26%;
+        right: 0rem;
+        top: 3rem;
+      
+    }
+
+    .profile-div {
+        width: 100%;
+        grid-template-areas: 
+        "C R S"
+        "H P P"
+        "B B B";
+    }
+
+    .profile-submit,
+    .profile-input-country, 
+    .profile-input-region, 
+    .profile-input-street, 
+    .profile-input-houseNumber, 
+    .profile-input-phoneNumber {
+        height: 50px;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    .products_ordered {
+
+        width: 100%;
+        height: 26%;
+        right: 0rem;
+        top: 3rem;
+      
+    }
+
+    
+    .profile-div {
+        width: 80%;
+        grid-template-areas: 
+        "C R"
+        "S H"
+        "P B";
+        column-gap: 10px;
+    }
+
+    .profile-submit,
+    .profile-input-country, 
+    .profile-input-region, 
+    .profile-input-street, 
+    .profile-input-houseNumber, 
+    .profile-input-phoneNumber {
+        height: 50px;
+        width: 100%;
+    }
+
+  
+}
+
+@media only screen and (max-width: 700px) {
+
+    .products_ordered {
+
+        width: 100%;
+        height: 26%;
+        right: 0rem;
+        top: 5rem;
+      
+    }
+
+    .profile-div {
+        width: 90%;
+
+    }
+    
+
+    
+}
+
+@media only screen and (max-width: 550px) {
+
+    .orders-row-header > th, .orders-row-data > td {
+
+        font-size: .9rem;
+    }
+
+
+    .profile-div {
+        width: 80%;
+
+
+    }
+
+
+    .profile-submit,
+    .profile-input-country, 
+    .profile-input-region, 
+    .profile-input-street, 
+    .profile-input-houseNumber, 
+    .profile-input-phoneNumber {
+        height: 50px;
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .fa-solid.fa-boxes-packing, .fa-solid.fa-address-card {
+        font-size: 3rem;
+    }
+
+    .products_ordered {
+        right: 0rem;
+        top: 3.2rem;
+        width: 100%;
+        height: 27%;
+        /* height: 246px; */
+        /* height: 194px; */
+    }
+
+    .profile-div {
+        width: 90%;
+        max-width: 800px;
+        height: 80%;
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: "C"
+                             "R" 
+                             "S"
+                             "H"
+                              "P"
+                               "B";
+    }
+
+    .profile-submit,
+    .profile-input-country, 
+    .profile-input-region, 
+    .profile-input-street, 
+    .profile-input-houseNumber, 
+    .profile-input-phoneNumber {
+        height: 100%;
+    }
+    
+    .profile-wrapper {
+        align-items: unset;
+
+    }
+
+
+}
+@media only screen and (max-width: 390px) {
+
+    .products_ordered {
+        right: 0rem;
+        top: 3.2rem;
+        width: 100%;
+        /* height: 246px; */
+        /* height: 230px; */
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .products_ordered {
+        width: 100%;
+        /* height: 174px; */
+        height: 26%;
+        right: 0rem;
+        top: 3rem;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .products_ordered {
+        width: 100%;
+        /* height: 157px; */
+        height: 27%;
+        right: 0rem;
+        top: 2rem;
+    }
+
+}
